@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rawatin — Rawat Rutin, Berkendara Tenang</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/regular/rounded.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/solid/rounded.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons@3.3.1/css/brands/all.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--  NAVBAR + HERO  -->
+  <header class="hero" id="beranda">
+    <nav class="container nav" aria-label="Navigasi utama">
+      <a href="#beranda" class="logo" aria-label="Rawatin">
+        <img src="assets/logo-icon.png" alt="">RAWATIN
+      </a>
+      <div class="nav-links">
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#alasan">Alasan Servis</a>
+        <a href="#tips">Tips Servis</a>
+        <a href="#faq">Pertanyaan</a>
+      </div>
+    </nav>
+
+    <div class="container hero-body">
+      <div>
+        <h1 class="hero-title">Rawat rutin berkendara tenang</h1>
+        <p class="hero-sub">Jadwalkan servis, pantau biaya, dan jaga motor tetap prima untuk perjalanan harian.</p>
+        <a class="btn" href="#tips">Coba Sekarang</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--  TENTANG KAMI  -->
+    <section class="section" id="tentang">
+      <div class="container about">
+        <div class="about-img">
+          <img src="assets/scooter.png" alt="Motor skuter krem dan biru" width="340" height="378">
+        </div>
+        <div>
+          <h2 class="section-title">Tentang Kami</h2>
+          <p class="about-text">Rawatin membantu pemilik motor merawat kendaraannya tanpa repot. Kami mengingatkan jadwal servis, mencatat biaya perawatan, dan memberi tips agar motor tetap nyaman dan aman dipakai setiap hari.</p>
+          <div class="pills">
+            <span class="pill"><i class="fi fi-rr-piggy-bank" aria-hidden="true"></i>Biaya Terpantau</span>
+            <span class="pill"><i class="fi fi-rr-calendar-check" aria-hidden="true"></i>Terjadwalkan</span>
+            <span class="pill"><i class="fi fi-rr-shield-check" aria-hidden="true"></i>Aman di Jalan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  ALASAN SERVIS RUTIN PENTING  -->
+    <section class="section reasons" id="alasan">
+      <div class="container">
+        <h2 class="section-title">Alasan Servis Rutin Penting?</h2>
+        <div class="cards">
+          <article class="card">
+            <i class="fi fi-sr-wrench-simple card-icon" aria-hidden="true"></i>
+            <h3 class="card-title">Mesin lebih awet</h3>
+            <p class="card-text">Oli dan filter yang diganti tepat waktu mengurangi gesekan dan menjaga performa mesin.</p>
+          </article>
+          <article class="card">
+            <i class="fi fi-sr-settings card-icon" aria-hidden="true"></i>
+            <h3 class="card-title">Biaya lebih hemat</h3>
+            <p class="card-text">Perawatan kecil yang rutin mencegah kerusakan besar yang ongkos perbaikannya jauh lebih mahal.</p>
+          </article>
+          <article class="card">
+            <i class="fi fi-sr-screwdriver card-icon" aria-hidden="true"></i>
+            <h3 class="card-title">Berkendara lebih aman</h3>
+            <p class="card-text">Rem, ban, dan rantai yang diperiksa berkala membuat motor stabil dan responsif di jalan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  TIPS SERVIS  -->
+    <section class="section" id="tips">
+      <div class="container tips">
+        <div>
+          <h2 class="section-title">Tips Servis</h2>
+
+          <div class="steps" role="tablist" aria-label="Pilih tips">
+            <button class="step" role="tab" id="tab1" aria-controls="tip1" aria-selected="true"  data-tip="1">1</button>
+            <button class="step" role="tab" id="tab2" aria-controls="tip2" aria-selected="false" data-tip="2" tabindex="-1">2</button>
+            <button class="step" role="tab" id="tab3" aria-controls="tip3" aria-selected="false" data-tip="3" tabindex="-1">3</button>
+            <button class="step" role="tab" id="tab4" aria-controls="tip4" aria-selected="false" data-tip="4" tabindex="-1">4</button>
+          </div>
+
+          <div class="tip" role="tabpanel" id="tip1" aria-labelledby="tab1">
+            <h3 class="tip-title">Ganti oli teratur</h3>
+            <p class="tip-text">Ganti oli mesin setiap 2.000–3.000 km atau sesuai buku panduan. Oli yang sudah kotor membuat mesin cepat panas dan aus.</p>
+          </div>
+          <div class="tip" role="tabpanel" id="tip2" aria-labelledby="tab2" hidden>
+            <h3 class="tip-title">Cek rem dan ban</h3>
+            <p class="tip-text">Periksa ketebalan kampas rem dan tekanan angin ban setiap minggu. Ban yang kempis boros bensin dan licin saat hujan.</p>
+          </div>
+          <div class="tip" role="tabpanel" id="tip3" aria-labelledby="tab3" hidden>
+            <h3 class="tip-title">Rawat rantai dan aki</h3>
+            <p class="tip-text">Bersihkan dan lumasi rantai secara berkala, lalu cek air aki atau tegangannya agar motor tidak mogok saat dinyalakan.</p>
+          </div>
+          <div class="tip" role="tabpanel" id="tip4" aria-labelledby="tab4" hidden>
+            <h3 class="tip-title">Catat jadwal servis</h3>
+            <p class="tip-text">Simpan tanggal dan biaya tiap servis. Dengan catatan yang rapi, kamu tahu kapan servis berikutnya dan ke mana uang perawatan pergi.</p>
+          </div>
+        </div>
+
+        <div class="gears" aria-hidden="true">
+          <i class="fi fi-sr-settings gears-big"></i>
+          <i class="fi fi-sr-settings gears-small"></i>
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQ  -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan Seputar Kami</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">Apa itu Rawatin?<i class="fi fi-rr-angle-small-down" aria-hidden="true"></i></summary>
+            <p class="faq-answer">Rawatin adalah layanan yang membantu kamu menjadwalkan servis, memantau biaya, dan merawat motor secara rutin.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Seberapa sering motor harus diservis?<i class="fi fi-rr-angle-small-down" aria-hidden="true"></i></summary>
+            <p class="faq-answer">Umumnya setiap 2.000–3.000 km atau 2–3 bulan sekali. Cek buku panduan motor untuk jadwal yang paling tepat.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Bagaimana Rawatin memantau biaya?<i class="fi fi-rr-angle-small-down" aria-hidden="true"></i></summary>
+            <p class="faq-answer">Setiap servis dicatat beserta tanggal dan nominalnya, sehingga total pengeluaran perawatan mudah dilihat.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Bagaimana cara mulai memakai Rawatin?<i class="fi fi-rr-angle-small-down" aria-hidden="true"></i></summary>
+            <p class="faq-answer">Tekan tombol Coba Sekarang, lalu ikuti langkah pada bagian Cara Penggunaan.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--  FOOTER  -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#beranda" class="logo" aria-label="Rawatin">
+          <img src="assets/logo-icon.png" alt="">RAWATIN
+        </a>
+        <p class="footer-about">Rawat rutin, berkendara tenang. Servis terjadwal, biaya terpantau, perjalanan aman.</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Hubungi Kami</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="fi fi-brands-whatsapp" aria-hidden="true"></i>Whatsapp</a></li>
+          <li><a href="#"><i class="fi fi-brands-instagram" aria-hidden="true"></i>Instagram</a></li>
+          <li><a href="#"><i class="fi fi-rr-envelope" aria-hidden="true"></i>Email</a></li>
+          <li><a href="#"><i class="fi fi-rr-marker" aria-hidden="true"></i>Alamat</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Link Cepat</h4>
+        <ul class="footer-list">
+          <li><a href="#">Team Kami</a></li>
+          <li><a href="#">Cara Penggunaan</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Rawatin. All Right Reserved</p>
+      <!-- Atribusi wajib untuk Flaticon Uicons (versi gratis) -->
+      <p class="footer-credit">Icons by <a href="https://www.flaticon.com/uicons" target="_blank" rel="noopener">Flaticon</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
